@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LUSZ STUDIOS website
 
-## Getting Started
+The new luszstudios.com. Built with Next.js, TypeScript and Tailwind CSS.
 
-First, run the development server:
+## Change the content
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+All text and lists live in `src/content/`. You never need to touch the page files to update them.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| File | What it holds |
+|---|---|
+| `site.ts` | Contact details, navigation, client names, the recommendation quote, credentials |
+| `projects.ts` | Every project and case study, including The Coffee Party Stockholm |
+| `services.ts` | Think, Make, Gather and the list under each |
+| `store.ts` | Store items. Empty for now: add items and the store page fills itself |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Photos go in `public/images/`. Keep them under about 2000 px on the long side.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A project with `draft: true` shows a short "full story on its way" note. Remove the line when its text is written.
 
-## Learn More
+## Add a video
 
-To learn more about Next.js, take a look at the following resources:
+1. Export the film as .mp4, under about 20 MB. Put it in `public/videos/`.
+2. In `projects.ts`, add this line to the project: `video: { src: "/videos/your-film.mp4", poster: "/images/a-still.jpg" },`
+3. For longer films, upload to Vimeo or YouTube and link to it from the project text.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Run it on your computer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Install Node.js 20 or newer from nodejs.org.
+2. In this folder, run `npm install`.
+3. Run `npm run dev` and open http://localhost:3000.
 
-## Deploy on Vercel
+## Put it online (Vercel)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Create a free account at github.com and at vercel.com.
+2. Upload this folder to a new GitHub repository.
+3. In Vercel, choose "Add New Project", pick the repository and press Deploy. You get a test address in a few minutes.
+4. In Vercel, open Settings, then Domains, add `luszstudios.com` and follow the DNS values it shows. Change them where the domain is registered. Keep the old Squarespace site running until the new one is live.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Make the contact form send email
+
+The form sends through Resend (resend.com). Until this is set up, the form tells visitors to email you directly, so no message is lost.
+
+1. Create a Resend account and verify the domain `luszstudios.com` there.
+2. Create an API key.
+3. In Vercel, open Settings, then Environment Variables, and add:
+   - `RESEND_API_KEY`: the key from Resend
+   - `CONTACT_FROM`: for example `LUSZ site <hello@luszstudios.com>`
+   - `CONTACT_TO` (optional): where messages should arrive. Defaults to contact@luszstudios.com.
+4. Redeploy.
+
+## Before launch
+
+- Confirm the Lotta Onajin quote with her, or set `quote` to `null` in `site.ts`.
+- Confirm photo permission and full credit names for the Coffee Party photos.
+- Write the full text for the draft projects (VSCO, Dometic, Xbox, Malibu Rum, Urbanears).
+- Add store items to `store.ts`.

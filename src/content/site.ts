@@ -1,0 +1,51 @@
+// Site-wide text and links. Edit here; every page reads from this file.
+export const site = {
+  name: "lusz studios.",
+  url: "https://www.luszstudios.com",
+  description:
+    "LUSZ STUDIOS is an independent creative studio in Stockholm. Brand, content, events and community, from the first idea to the last guest leaving.",
+  email: "contact@luszstudios.com",
+  whatsapp: "+46708352162",
+  whatsappLabel: "+46 70 835 21 62",
+  instagram: "https://www.instagram.com/luszstudios/",
+  tradera: "https://www.tradera.com/profile/items/4879971/luszstudios",
+  storeInstagram: "https://www.instagram.com/luszstudios.store/",
+  linkedin: "https://www.linkedin.com/in/betsey-gusman-a7881859/",
+  marquee: "We create the change we want to see",
+  nav: [
+    { href: "/work", label: "work" },
+    { href: "/services", label: "services" },
+    { href: "/about", label: "about" },
+    { href: "/store", label: "store" },
+    { href: "/contact", label: "contact" },
+  ],
+  clients: ["VSCO", "Dometic", "Urbanears", "The Absolut Company", "Xbox"],
+  clientsAlso: [
+    "Malibu Rum",
+    "Rebtel",
+    "MAJORITY",
+    "Mondo Village",
+    "Thursday",
+    "Stockholm Hunter",
+    "Wella Nordics",
+    "Nufferton",
+    "The Forumist",
+    "Backstage Stockholm",
+    "Slakthuset",
+    "Vassa Eggen",
+    "Kasai",
+    "Hosoi",
+  ],
+  // Confirm with Lotta before launch, or set to null to hide the section.
+  quote: {
+    text: "She has a true eye for what is right or wrong for a brand.",
+    by: "Lotta Onajin, worked with Betsey at Rebtel and MAJORITY",
+  } as { text: string; by: string } | null,
+  credentials: [
+    "VSCO Ambassador since June 2026",
+    "Co-founder, The Coffee Party Stockholm",
+    "Hyper Island, Business Development",
+    "Photo exhibitions at LAMB and GG66, 2022",
+    "AI exhibition at Tekniska Museet, 2024",
+  ],
+};
