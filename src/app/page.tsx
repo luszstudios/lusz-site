@@ -26,8 +26,8 @@ export default function Home() {
           </h1>
           <div className="flex flex-wrap items-end justify-between gap-6">
             <p className="max-w-md text-lg leading-snug">
-              An independent creative studio in Stockholm. Brand, content, events and community,
-              from the first idea to the last guest leaving.
+              An independent creative studio in Stockholm. We turn marketing budgets into things
+              people turn up for, talk about and come back to.
             </p>
             <Button href="/work">see the work</Button>
           </div>
@@ -155,8 +155,8 @@ export default function Home() {
 
       {/* Recommendation */}
       {site.quote && (
-        <section className="flex flex-col gap-6 px-5 py-16 md:px-12">
-          <blockquote className="display max-w-6xl text-[clamp(1.9rem,4vw,3.5rem)] !leading-[1.02] !normal-case text-blue">
+        <section className="flex flex-col gap-6 bg-ice px-5 py-20 text-burgundy md:px-12 md:py-24">
+          <blockquote className="display max-w-6xl text-[clamp(1.9rem,4vw,3.5rem)] !leading-[1.02] !normal-case">
             “{site.quote.text}”
           </blockquote>
           <p>{site.quote.by}</p>

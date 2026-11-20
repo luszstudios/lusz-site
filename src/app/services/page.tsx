@@ -25,8 +25,8 @@ export default function ServicesPage() {
           gather.
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-snug">
-          Three things, usually in that order. Hire us for one of them or for the whole run, from
-          the first strategy session to the last guest leaving.
+          Three things, usually in that order. Hire us for one or for the whole run. Either way
+          you leave with something people can show up to, not a deck.
         </p>
       </section>
 

@@ -39,7 +39,7 @@ export const site = {
   // Confirm with Lotta before launch, or set to null to hide the section.
   quote: {
     text: "She has a true eye for what is right or wrong for a brand.",
-    by: "Lotta Onajin, worked with Betsey at Rebtel and MAJORITY",
+    by: "Lotta Onajin, CMO at Lyko, worked with Betsey at Rebtel and MAJORITY",
   } as { text: string; by: string } | null,
   credentials: [
     "VSCO Ambassador since June 2026",

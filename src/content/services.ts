@@ -10,8 +10,8 @@ export const services: Service[] = [
   {
     slug: "think",
     name: "think",
-    line: "Positioning, brand and creative strategy, partnerships. Deciding what is worth making.",
-    body: "Before anything gets shot, designed or booked, we work out what the brand should stand for and who it is for. Then we look for the partners and openings that make the plan bigger than the budget.",
+    line: "You stop guessing. A clear position, a reason to be picked, and a plan you can actually run.",
+    body: "Most brands do not have a content problem, they have a decision problem. We settle what you stand for, who it is for and what you will not do. You leave with a position, the words that carry it, and partners worth having. Everything after this gets cheaper and faster because of it.",
     items: [
       "Brand strategy and positioning",
       "Creative strategy",
@@ -25,8 +25,8 @@ export const services: Service[] = [
   {
     slug: "make",
     name: "make",
-    line: "Identity, art direction, photography, film, social. Made by the people who planned it.",
-    body: "The person who wrote the strategy is on set and in the edit. That is how the idea survives all the way to the feed.",
+    line: "Work that looks like you, and keeps earning after launch week.",
+    body: "The person who wrote the strategy is on set and in the edit, so the idea survives all the way to the feed. You end up owning a library of photography, film and social content you can keep using, not a single campaign that dies on Friday.",
     items: [
       "Brand and visual identity",
       "Creative and art direction",
@@ -40,8 +40,8 @@ export const services: Service[] = [
   {
     slug: "gather",
     name: "gather",
-    line: "Events, pop-ups, launches, community, and artists as ambassadors for your brand.",
-    body: "We put the right people in one room and give them a reason to come back. We also match brands with artists and DJs from our network, as ambassadors or for a single night.",
+    line: "A room full of the right people, and the relationships that outlast the night.",
+    body: "An event is the fastest way to turn an audience into a community. We build the concept, book the artists, run the night and hand back the footage, the contacts and a reason for people to return. We also place artists and DJs from our network with brands, as ambassadors or for one night.",
     items: [
       "Event concepts and production",
       "Brand activations and pop-ups",

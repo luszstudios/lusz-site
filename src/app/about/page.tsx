@@ -92,8 +92,8 @@ export default function AboutPage() {
       </section>
 
       {site.quote && (
-        <section className="flex flex-col gap-6 px-5 py-16 md:px-12">
-          <blockquote className="display max-w-6xl text-[clamp(1.9rem,4vw,3.5rem)] !leading-[1.02] !normal-case text-blue">
+        <section className="flex flex-col gap-6 bg-ice px-5 py-20 text-burgundy md:px-12 md:py-24">
+          <blockquote className="display max-w-6xl text-[clamp(1.9rem,4vw,3.5rem)] !leading-[1.02] !normal-case">
             “{site.quote.text}”
           </blockquote>
           <p>{site.quote.by}</p>
